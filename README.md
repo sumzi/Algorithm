@@ -1,2 +1,2 @@
-# Algorithm
-알고리즘 소스코드
+# 👩‍💻Algorithm
+* python 으로 작성
