@@ -1,2 +1,2 @@
-### Algorithm
-* python 으로 작성
+## 💻Algorithm
+* 언어는 python 으로 작성
