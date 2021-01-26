@@ -1,2 +1,2 @@
-# 👩‍💻Algorithm
-* python 으로 작성
+## 💻 알고리즘 공부 
+* 언어는 python 으로 작성
