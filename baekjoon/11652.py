@@ -10,5 +10,4 @@ for i in range(n):
     else:
         a[tmp]=1
 
-b=sorted(a.items(),key=lambda x:(-x[1],x))
-print(b[0][0])
+print(sorted(a.items(),key=lambda x:(-x[1],x[0]))[0][0])
