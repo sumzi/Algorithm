@@ -21,8 +21,11 @@ def bfs():
         cnt=len(q)
         t+=1
         if t==k:
-            print(max(s))
-            return 
+            if s:
+                print(max(s))
+            else:
+                print(-1)
+            return
     print(-1)
 
 n,k=map(int,input().split())
