@@ -1,25 +1,25 @@
 import sys
+sys.setrecursionlimit(10**9)
 input=sys.stdin.readline
-def dfs(cur,isParent):
-    if visited[cur]!=-1:
-        return visited[cur]
-    
-    tmp=(1 if isParent==0 else 0)
-    for i in dp[cur]:
-        if isParent==1:
-            tmp+=(min(dfs(i,1)+1,dfs(i,0)))
-        elif isParent==0:
-            tmp+=(dfs(i,1))    
-    visited[cur]=tmp
-    print(cur,"에서",visited)
-    return tmp
+
+def dfs(prev,cur,check):
+    if dp[cur][check]!=-1:
+        return dp[cur][check]
+    dp[cur][check]=check
+    for i in arr[cur]:
+        if prev!=i:
+            if check:
+                dp[cur][1]+=min(dfs(cur,i,0),dfs(cur,i,1))
+            else:
+                dp[cur][0]+=dfs(cur,i,1)
+    print(dp)
+    return dp[cur][check]
+
 n=int(input())
-visited=[-1]*(n+1)
-dp=[[] for i in range(n+1)]
+arr=[[] for i in range(n+1)]
+dp=[[-1,-1] for i in range(n+1)]
 for i in range(n-1):
     a,b=map(int,input().split())
-    dp[a].append(b)
-    dp[b].append(a)
-print(dfs(1,1))
-print(visited)
-#print(min(dfs(0,1,1),dfs(0,1,0)))
+    arr[a].append(b)
+    arr[b].append(a)
+print(min(dfs(0,1,0),dfs(0,1,1)))
