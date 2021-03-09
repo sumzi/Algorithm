@@ -2,7 +2,7 @@ import heapq
 import sys
 input=sys.stdin.readline
 
-def dikstra(x):
+def dijkstra(x):
     q=[]
     dist=[INF]*(n+1)
     dist[x]=0
@@ -25,8 +25,8 @@ for i in range(e):
     dp[a].append([b,c])
     dp[b].append([a,c])
 v1,v2=map(int,input().split())
-start=dikstra(1)
-route1=dikstra(v1)
-route2=dikstra(v2)
+start=dijkstra(1)
+route1=dijkstra(v1)
+route2=dijkstra(v2)
 res=min(start[v1]+route1[v2]+route2[n],start[v2]+route2[v1]+route1[n])
 print(res if res<INF else -1)
