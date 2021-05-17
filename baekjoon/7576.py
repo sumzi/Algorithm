@@ -3,8 +3,13 @@ from collections import deque
 input=sys.stdin.readline
 dx=[0,0,-1,1]
 dy=[-1,1,0,0]
+n,m=map(int,input().split())
+arr=[]
+q=deque()
 
 def bfs():
+    x=0
+    y=0
     while q:
         tmp=q.popleft()
         x=tmp[0]
@@ -17,9 +22,6 @@ def bfs():
                 arr[nx][ny]=arr[x][y]+1
     return arr[x][y]
 
-n,m=map(int,input().split())
-arr=[]
-q=deque()
 for i in range(m):
     arr.append(list(map(int,input().split())))
     for j in range(n):
