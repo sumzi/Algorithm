@@ -1,5 +1,5 @@
-t=input().replace('\n',"")
-p=input().replace('\n',"")
+t=input().rstrip()
+p=input().rstrip()
 n=len(t)
 m=len(p)
 fail=[0]*(m)
