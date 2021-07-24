@@ -1,3 +1,5 @@
+package java.baekjoon.queue_deque;
+
 import java.util.*;
 
 public class Main_11866 {
