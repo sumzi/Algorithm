@@ -1,12 +1,8 @@
-package java.baekjoon.dp;
-
-/**
- * Main_1912
- */
+package baekjoon;
 import java.util.*;
 import java.io.*;
 
-public class Main_1912 {
+public class Main1912 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
