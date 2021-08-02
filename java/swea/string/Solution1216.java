@@ -3,7 +3,7 @@ package swea.string;
 import java.util.Scanner;
 
 public class Solution1216 {
-    static int n, ans, l, r;
+	static int n, ans, l, r;
 	static char[][] arr;
 	static boolean flag;
 
@@ -17,32 +17,34 @@ public class Solution1216 {
 			}
 			ans = 0;
 			for (int a = 0; a < 100; a++) {
-				for(int b = 1;b<100;b++){
-					for (int c = 0; c < 100-b; c++) {
-						flag=true;
-						l=c;
-						r=c+b;
-						while(l<r){
-							if(arr[a][l++]!=arr[a][r--]){
-								flag=false;
+				for (int b = 1; b < 100; b++) {
+					for (int c = 0; c < 100 - b; c++) {
+						flag = true;
+						l = c;
+						r = c + b;
+						while (l < r) {
+							if (arr[a][l++] != arr[a][r--]) {
+								flag = false;
 								break;
 							}
 						}
-						if(flag) ans=Math.max(ans, b);
-						flag=true;
-						l=c;
-						r=c+b;
-						while(l<r){
-							if(arr[l++][a]!=arr[r--][a]){
-								flag=false;
+						if (flag)
+							ans = Math.max(ans, b);
+						flag = true;
+						l = c;
+						r = c + b;
+						while (l < r) {
+							if (arr[l++][a] != arr[r--][a]) {
+								flag = false;
 								break;
 							}
 						}
-						if(flag) ans=Math.max(ans, b);
+						if (flag)
+							ans = Math.max(ans, b);
 					}
 				}
 			}
-			System.out.printf("#%d %d%n",n,ans+1);
+			System.out.printf("#%d %d%n", n, ans + 1);
 		}
 	}
 }
