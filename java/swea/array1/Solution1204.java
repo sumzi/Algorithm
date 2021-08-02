@@ -1,4 +1,4 @@
-package swea.array;
+package swea.array1;
 
 import java.util.Scanner;
 
