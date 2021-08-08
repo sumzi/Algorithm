@@ -47,15 +47,11 @@ public class Solution1232 {
 
             for (int j = 1; j <= n; j++) {
                 st = new StringTokenizer(br.readLine());
-                // 노드 번호 버린다. 필요없다.
                 st.nextToken();
-                // 연산자인지 숫자인지 구별한다.
                 if (st.countTokens() > 1) {
-                    // 연산자다.
                     node[j] = new Node(st.nextToken(), Integer.parseInt(st.nextToken()),
                             Integer.parseInt(st.nextToken()));
                 } else {
-                    // 숫자다.
                     node[j] = new Node(Integer.parseInt(st.nextToken()));
                 }
             }
