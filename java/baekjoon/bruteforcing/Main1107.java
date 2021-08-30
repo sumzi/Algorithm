@@ -1,4 +1,4 @@
-package baekjoon.Brute_Force;
+package baekjoon.bruteforcing;
 
 import java.util.*;
 import java.io.*;
@@ -12,7 +12,7 @@ public class Main1107 {
         number = new boolean[10];
         n = Integer.parseInt(br.readLine());
         int m = Integer.parseInt(br.readLine());
-        if(m!=0){
+        if (m != 0) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             for (int i = 0; i < m; i++) {
                 number[Integer.parseInt(st.nextToken())] = true;
@@ -29,8 +29,8 @@ public class Main1107 {
     }
 
     private static int check(int x) {
-        if(x==0){
-            if(number[0])
+        if (x == 0) {
+            if (number[0])
                 return 0;
             return 1;
         }

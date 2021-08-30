@@ -1,4 +1,4 @@
-package baekjoon.Brute_Force;
+package baekjoon.bruteforcing;
 
 import java.util.*;
 import java.io.*;
@@ -6,6 +6,7 @@ import java.io.*;
 public class Main10973 {
     static int n;
     static int[] arr;
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
@@ -22,11 +23,13 @@ public class Main10973 {
             System.out.println(-1);
         }
     }
+
     public static void swap(int x, int y) {
         int tmp = arr[x];
         arr[x] = arr[y];
         arr[y] = tmp;
     }
+
     public static boolean nextPermutation() {
         int i = n - 1;
         while (i > 0 && arr[i - 1] <= arr[i])

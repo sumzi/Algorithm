@@ -1,4 +1,4 @@
-package baekjoon.Brute_Force;
+package baekjoon.bruteforcing;
 
 import java.io.*;
 import java.util.*;

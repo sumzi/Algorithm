@@ -1,4 +1,4 @@
-package baekjoon.Brute_Force;
+package baekjoon.bruteforcing;
 
 import java.util.*;
 import java.io.*;
@@ -48,7 +48,7 @@ public class Main2251 {
         }
         Collections.sort(ans);
         for (Integer i : ans) {
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
     }
 }
