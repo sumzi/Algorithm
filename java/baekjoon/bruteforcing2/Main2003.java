@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.bruteforcing2;
 
 import java.util.Scanner;
 
