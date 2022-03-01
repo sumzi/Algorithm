@@ -5,14 +5,14 @@
 - 문제를 해결한 코드만 commit합니다.
 
 
-### 🐟 Language
+### ✨ Language
 
 - [Python](https://github.com/sumzi/Algorithm/tree/master/python)
 - [Java](https://github.com/sumzi/Algorithm/tree/master/java)
 - [JavaScript](https://github.com/sumzi/Algorithm/tree/master/javascript)
 
 
-### 🐠 Online Judge
+### 💫 Online Judge
 
 - [Baekjoon](https://www.acmicpc.net/)
 - [Programmers](https://programmers.co.kr/learn/challenges)
